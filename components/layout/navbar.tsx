@@ -5,7 +5,7 @@ import Button from "@mui/material/Button";
 
 export default function NavBar() {
   return (
-    <nav className="hidden sm:grid py-6 px-10 items-center grid-cols-12 gap-4 border-y-2 border-border bg-white text-black">
+    <nav className="hidden sm:grid py-6 px-10 items-center grid-cols-12 gap-4 border-y-2 border-border">
       <span className="col-span-8 flex items-center">
         <img
           width={100}
