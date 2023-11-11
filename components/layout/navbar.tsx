@@ -10,7 +10,7 @@ import Paper from "@mui/material/Paper";
 
 export default function NavBar() {
   return (
-    <nav className="hidden md:grid py-4 px-10 items-center grid-cols-12 gap-4 border-y-2 border-border">
+    <nav className="hidden md:grid py-4 px-10 items-center grid-cols-12 gap-4 border-b-2 border-border">
       <span className="col-span-1 lg:col-span-4  flex items-center">
         <img
           className="hidden lg:block h-8 object-contain "
@@ -32,9 +32,9 @@ export default function NavBar() {
             Any week
           </Button>
           <Divider orientation="vertical" flexItem className="my-3" />
-          <Button className="py-3 pl-4  rounded-r-full normal-case truncate font-light text-stone-400 hover:bg-transparent">
-            Add guests
-            <SearchIcon className="ml-2 p-1 rounded-full bg-primaryLogo text-white"/>
+          <Button className="pl-4 rounded-r-full normal-case truncate font-light text-stone-400 hover:bg-transparent">
+            <span className="mr-2">Add guests</span>
+            <SearchIcon className="p-2 w-8 h-8 rounded-full bg-primaryLogo text-white"/>
           </Button>
         </Paper>
       </span>
