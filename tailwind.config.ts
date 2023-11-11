@@ -15,6 +15,8 @@ const config: Config = {
       },
       colors: {
         border: "#E9E9E9",
+        hoverBg: "#F7F7F7",
+        primaryLogo: "#F4395D"
       },
     },
   },
