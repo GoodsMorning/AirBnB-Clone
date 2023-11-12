@@ -2,24 +2,32 @@ import React from "react";
 import LanguageIcon from "@mui/icons-material/Language";
 import MenuIcon from "@mui/icons-material/Menu";
 import AccountCircleIcon from "@mui/icons-material/AccountCircle";
-import SearchIcon from '@mui/icons-material/Search';
+import SearchIcon from "@mui/icons-material/Search";
 import Button from "@mui/material/Button";
 import IconButton from "@mui/material/IconButton";
 import Divider from "@mui/material/Divider";
 import Paper from "@mui/material/Paper";
+import Image from "next/image";
 
 export default function NavBar() {
   return (
-    <nav className="hidden md:grid py-4 px-10 items-center grid-cols-12 gap-4 border-b-2 border-border">
-      <span className="col-span-1 lg:col-span-4  flex items-center">
-        <img
-          className="hidden lg:block h-8 object-contain "
-          width={100}
-          src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Airbnb_Logo_B%C3%A9lo.svg/2560px-Airbnb_Logo_B%C3%A9lo.svg.png"
+    <nav className="hidden h-24  md:grid md:px-10 lg:px-20 items-center grid-cols-12 gap-4 border-b-2 border-border">
+      <span className="col-span-1 lg:col-span-4 block">
+        <Image
+          className="hidden lg:block w-auto h-auto"
+          height={64}
+          width={118}
+          priority={true}
+          src="/images/Airbnb_Logo_Long.png"
+          alt="logo-name"
         />
-        <img
-          className="lg:hidden h-8 object-contain "
-          src="https://cdn.icon-icons.com/icons2/2699/PNG/512/airbnb_logo_icon_170605.png"
+        <Image
+          className="lg:hidden"
+          height={23}
+          width={32}
+          priority={true}
+          src="/images/Airbnb_Logo.png"
+          alt="logo"
         />
       </span>
       <span className="col-span-6 lg:col-span-4 flex items-center justify-center">
@@ -34,7 +42,7 @@ export default function NavBar() {
           <Divider orientation="vertical" flexItem className="my-3" />
           <Button className="pl-4 rounded-r-full normal-case truncate font-light text-stone-400 hover:bg-transparent">
             <span className="mr-2">Add guests</span>
-            <SearchIcon className="p-2 w-8 h-8 rounded-full bg-primaryLogo text-white"/>
+            <SearchIcon className="p-2 w-8 h-8 rounded-full bg-primaryLogo text-white" />
           </Button>
         </Paper>
       </span>
@@ -46,7 +54,7 @@ export default function NavBar() {
           Airbnb your home
         </Button>
         <IconButton aria-label="Language" className="hover:bg-hoverBg">
-          <LanguageIcon/>
+          <LanguageIcon />
         </IconButton>
         <Button
           className="p-2 rounded-full text-black hover:bg-hoverBg"
