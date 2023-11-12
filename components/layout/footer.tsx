@@ -86,7 +86,7 @@ export default function Footer() {
 			</Box>
 		</Box>
 		<Box className="py-6 grid place-items-center lg:grid lg:grid-cols-2 lg:">
-			<Box className="flex lg:order-last lg:justify-end">
+			<Box className="flex lg:order-last lg:justify-end lg:w-full">
 				<IconButton aria-label="Language" className="text-black hover:bg-hoverBg">
 					<LanguageIcon />
 				</IconButton>
@@ -94,7 +94,7 @@ export default function Footer() {
 					English (US) ฿ THB
 				</Button>
 			</Box>
-			<Box className="grid place-items-center lg:flex lg:justify-items-start">
+			<Box className="grid place-items-center lg:flex lg:justify-start lg:w-full">
 				<Button className="normal-case text-black font-light"> 2023 Airbnb, Inc.</Button>
 				<Box className="text-xs flex gap-1 font-light">
 					<span>Terms</span>
