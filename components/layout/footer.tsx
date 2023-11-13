@@ -16,46 +16,16 @@ export default function Footer() {
           </Tabs> */}
         </Box>
         <Box className="pt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-2 gap-y-6">
-			<Box className="block col-span-1">
-				<span className="block">Canmore</span>
-				<span className="block text-neutral-400	font-light text-sm">Condo rentals</span>
-			</Box>
-			<Box className="block col-span-1">
-				<span className="block">Canmore</span>
-				<span className="block text-neutral-400	font-light text-sm">Condo rentals</span>
-			</Box>
-			<Box className="block col-span-1">
-				<span className="block">Canmore</span>
-				<span className="block text-neutral-400	font-light text-sm">Condo rentals</span>
-			</Box>
-			<Box className="block col-span-1">
-				<span className="block">Canmore</span>
-				<span className="block text-neutral-400	font-light text-sm">Condo rentals</span>
-			</Box>
-			<Box className="block col-span-1">
-				<span className="block">Canmore</span>
-				<span className="block text-neutral-400	font-light text-sm">Condo rentals</span>
-			</Box>
-			<Box className="block col-span-1">
-				<span className="block">Canmore</span>
-				<span className="block text-neutral-400	font-light text-sm">Condo rentals</span>
-			</Box>
-			<Box className="block col-span-1">
-				<span className="block">Canmore</span>
-				<span className="block text-neutral-400	font-light text-sm">Condo rentals</span>
-			</Box>
-			<Box className="block col-span-1">
-				<span className="block">Canmore</span>
-				<span className="block text-neutral-400	font-light text-sm">Condo rentals</span>
-			</Box>
-			<Box className="block col-span-1">
-				<span className="block">Canmore</span>
-				<span className="block text-neutral-400	font-light text-sm">Condo rentals</span>
-			</Box>
-			<Box className="block col-span-1">
-				<span className="block">Canmore</span>
-				<span className="block text-neutral-400	font-light text-sm">Condo rentals</span>
-			</Box>
+			{
+				Array(15).fill(0).map((i) =>{
+					return (
+						<Box className="block col-span-1" key={i}>
+							<span className="block">Canmore</span>
+							<span className="block text-neutral-400	font-light text-sm">Condo rentals</span>
+						</Box>
+					)
+				})
+			}
 		</Box>
       </Box>
       <Box className="px-10 lg:px-20 bg-hoverBg">
