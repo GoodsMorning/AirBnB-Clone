@@ -17,7 +17,7 @@ export default function Footer() {
         </Box>
         <Box className="pt-8 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-x-2 gap-y-6">
 			{
-				Array(15).fill(0).map((i) =>{
+				Array(15).fill(0).map((_,i) =>{
 					return (
 						<Box className="block col-span-1" key={i}>
 							<span className="block">Canmore</span>
