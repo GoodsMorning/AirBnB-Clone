@@ -11,7 +11,7 @@ import Image from "next/image";
 
 export default function NavBar() {
   return (
-    <nav className="hidden h-24  md:grid md:px-10 lg:px-20 items-center grid-cols-12 gap-4 border-b-2 border-border">
+    <nav className="hidden sticky top-0 h-24  md:grid md:px-10 lg:px-20 items-center grid-cols-12 gap-4 border-b border-border bg-white">
       <span className="col-span-1 lg:col-span-4 block">
         <Image
           className="hidden lg:block w-auto h-auto"
